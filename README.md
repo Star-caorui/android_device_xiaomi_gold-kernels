@@ -36,6 +36,7 @@ SHA-256 35c9f1d98b28538ac10c319ad4cba993cd5a632960d9111162e3efa494dae5c9
 | Commit | What it does |
 | --- | --- |
 | 1 | Imports the files exactly as the package has them |
+| 2 | Adds `wmt_drv.ko` to `modules.load.vendor`. The Wi-Fi, Bluetooth, GPS and FM drivers depend on it |
 
 Each commit message gives the exact command.
 
@@ -80,5 +81,5 @@ After the progress lines of `ota_extractor`, nothing more is printed when every 
 
 ## Credits
 
-- [Dhterech](https://github.com/Dhterech/android_kernel_xiaomi_gold): the layout of this directory is that of his android_kernel_xiaomi_gold. Our device tree is a fork of his.
+- [Dhterech](https://github.com/Dhterech/android_kernel_xiaomi_gold): the layout of this directory is that of his android_kernel_xiaomi_gold, and loading `wmt_drv.ko` from `modules.load.vendor` is his change. Our device tree is a fork of his.
 - The files themselves were taken from Xiaomi's package again, not from that repository.
